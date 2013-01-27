@@ -1,4 +1,7 @@
 Blog::Application.routes.draw do
+  resources :posts
+
+
   get "home/index"
 	# 修改進入點為 home
 	root :to => "home#index"
